@@ -125,9 +125,9 @@ private struct ComicPlate: View {
     private func comicImage(_ image: UIImage) -> some View {
         if #available(iOS 18.0, *) {
             Image(uiImage: image)
-                .widgetAccentedRenderingMode(.fullColor)
                 .resizable()
                 .interpolation(.high)
+                .widgetAccentedRenderingMode(.fullColor)
                 .aspectRatio(contentMode: .fit)
         } else {
             Image(uiImage: image)

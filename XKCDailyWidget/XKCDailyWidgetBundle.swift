@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 @main
-struct DailyXKCDWidgetBundle: WidgetBundle {
+struct XKCDailyWidgetBundle: WidgetBundle {
     var body: some Widget {
         DailyComicWidget()
     }
@@ -13,7 +13,7 @@ struct DailyComicWidget: Widget {
         StaticConfiguration(kind: AppConfig.widgetKind, provider: ComicProvider()) { entry in
             ComicWidgetView(entry: entry)
         }
-        .configurationDisplayName("Daily xkcd")
+        .configurationDisplayName("xkcdaily")
         .description("Today's xkcd strip, refreshed every day at midnight.")
         .supportedFamilies([
             .systemSmall, .systemMedium, .systemLarge, .systemExtraLarge,

@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 @main
-struct DailyXKCDApp: App {
+struct XKCDailyApp: App {
     @State private var model = ComicModel()
     @Environment(\.scenePhase) private var scenePhase
 

@@ -9,7 +9,7 @@ struct RootView: View {
         NavigationStack {
             content
                 .background(Theme.paper.ignoresSafeArea())
-                .navigationTitle("Daily xkcd")
+                .navigationTitle("xkcdaily")
                 .navigationBarTitleDisplayMode(.inline)
                 .toolbarBackground(Theme.paper, for: .navigationBar)
                 .toolbar { toolbar }

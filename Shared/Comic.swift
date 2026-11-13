@@ -39,8 +39,8 @@ struct Comic: Codable, Hashable, Identifiable, Sendable {
 
     static let sample = Comic(
         num: 0,
-        title: "Daily xkcd",
-        safeTitle: "Daily xkcd",
+        title: "xkcdaily",
+        safeTitle: "xkcdaily",
         alt: "A new strip, every day.",
         img: "",
         year: "2026", month: "1", day: "1",

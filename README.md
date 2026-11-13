@@ -1,4 +1,4 @@
-# Daily xkcd
+# xkcdaily
 
 An iPhone and iPad app that shows a new xkcd strip every day, plus Home Screen
 and Lock Screen widgets that show the same strip.
@@ -29,26 +29,26 @@ and Lock Screen widgets that show the same strip.
 
 ## Build and run
 
-1. Open `DailyXKCD.xcodeproj`.
+1. Open `XKCDaily.xcodeproj`.
 2. Edit `Config/Signing.xcconfig`:
    - `DEVELOPMENT_TEAM`: your team ID
    - `BUNDLE_ID_PREFIX`: a reverse-DNS prefix you own (e.g. `com.yourname`)
 
-   The bundle IDs and the App Group (`group.<prefix>.dailyxkcd`) are derived
+   The bundle IDs and the App Group (`group.<prefix>.xkcdaily`) are derived
    from the prefix, and the app reads the group name from its Info.plist, so
    you don't need to change anything else. With automatic signing, Xcode
    registers the App Group the first time you build for a device.
-3. Select the **DailyXKCD** scheme and run it on a simulator or device.
-4. To try the widgets, add **Daily xkcd** from the widget gallery, or run the
-   **DailyXKCDWidgetExtension** scheme.
+3. Select the **XKCDaily** scheme and run it on a simulator or device.
+4. To try the widgets, add **xkcdaily** from the widget gallery, or run the
+   **XKCDailyWidgetExtension** scheme.
 
 ## Project layout
 
 | Folder | Contents |
 | --- | --- |
 | `Shared/` | Code built into both targets: the comic model, the xkcd client and image cache (`ComicService`), the daily pick logic (`DailyPicker`), shared storage (`ComicStore`) and the theme |
-| `DailyXKCD/` | The SwiftUI app |
-| `DailyXKCDWidget/` | The WidgetKit extension |
+| `XKCDaily/` | The SwiftUI app |
+| `XKCDailyWidget/` | The WidgetKit extension |
 | `Config/` | Signing settings, entitlements and Info.plist fragments |
 
 The project uses Xcode's folder-synchronised groups, so new files you add to
@@ -60,3 +60,11 @@ xkcd is drawn by Randall Munroe and shared under a
 [Creative Commons Attribution-NonCommercial 2.5](https://xkcd.com/license.html)
 licence. This is an unofficial reader and isn't affiliated with xkcd. The comic
 data comes from xkcd's public JSON API (`https://xkcd.com/info.0.json`).
+
+## Licence and use
+
+xkcdaily is free and non-commercial. It is not for sale, and it carries no ads
+or purchases. The comics belong to Randall Munroe under CC BY-NC 2.5, which does
+not permit commercial use, so please don't charge for this app or use it to make
+money without his permission. The source code in this repository is licensed
+under the GNU Affero General Public License v3 (see `LICENSE`).

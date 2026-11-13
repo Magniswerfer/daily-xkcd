@@ -19,7 +19,7 @@ struct SettingsView: View {
 
                     VStack(alignment: .leading, spacing: 10) {
                         LabelText("Widgets")
-                        Text("Long-press your Home Screen or Lock Screen, tap Edit, then Add Widget and search for Daily xkcd. Widgets show the same comic as the app and switch to the next one at midnight.")
+                        Text("Long-press your Home Screen or Lock Screen, tap Edit, then Add Widget and search for xkcdaily. Widgets show the same comic as the app and switch to the next one at midnight.")
                             .font(.reading())
                             .foregroundStyle(Theme.ink)
                             .fixedSize(horizontal: false, vertical: true)
